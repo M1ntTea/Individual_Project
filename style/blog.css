@@ -1,0 +1,73 @@
+h1 {
+    text-align: center;
+}
+
+.blog__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.blog__story1,
+.blog__story2,
+.blog__story3 {
+    background-color: gainsboro;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.blog__story1 h2,
+.blog__story2 h2,
+.blog__story3 h2 {
+    margin-top: 0;
+}
+
+.blog__story1 p,
+.blog__story2 p,
+.blog__story3 p {
+    margin-top: 1rem;
+}
+
+/* Для планшетов */
+@media screen and (max-width: 768px) {
+    .blog__container {
+        max-width: 100%;
+    }
+    
+    .blog__story1,
+    .blog__story2,
+    .blog__story3 {
+        padding: 1.5rem;
+    }
+}
+
+/* Для смартфонов */
+@media screen and (max-width: 480px) {
+    .blog__story1,
+    .blog__story2,
+    .blog__story3 {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .blog__story1 h2,
+    .blog__story2 h2,
+    .blog__story3 h2 {
+        font-size: 1.2em;
+    }
+    
+    .blog__story1 p,
+    .blog__story2 p,
+    .blog__story3 p {
+        font-size: 0.9em;
+    }
+}
+
+/* Пояснения */
+
+/* Стили для блоков историй объединены, чтобы уменьшить повторение кода. */
+/* В медиа-запросах я изменил отступы, размеры шрифтов и другие стили для лучшего отображения на меньших экранах. */

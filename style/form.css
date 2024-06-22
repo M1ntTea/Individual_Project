@@ -1,0 +1,64 @@
+/* Общие стили */
+form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form__group {
+    margin-bottom: 20px;
+}
+
+input, select {
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+    width: 100%;
+    color: gray;
+    padding: 10px 15px;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.form__submit {
+    border: 1px solid gray;
+    border-radius: 30px;
+    color: gray;
+    padding: 10px 15px;
+    background: transparent;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/* Стили для устройств с шириной экрана больше 768px */
+@media (min-width: 769px) {
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form__group {
+        width: 30%;
+    }
+
+    .form__submit {
+        width: 200px;
+        margin-top: 20px;
+        align-self: flex-end;
+    }
+}
+
+/* Стили для устройств с шириной экрана меньше или равной 768px */
+@media (max-width: 768px) {
+    .form__group {
+        width: 100%;
+    }
+
+    .form__submit {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
